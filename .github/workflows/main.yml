@@ -1,0 +1,19 @@
+name: Fluxgraph CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a simple build step
+        run: echo "Building Fluxgraph..."
+      - name: Run a one-line script
+        run: echo "Hello, world!"
