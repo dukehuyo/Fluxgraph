@@ -1,0 +1,35 @@
+{
+  "serviceName": "Fluxgraph Core",
+  "timestamp": "2024-10-27T10:30:00.000Z",
+  "status": "UP",
+  "version": "1.2.3",
+  "instanceId": "fluxgraph-core-01",
+  "uptimeSeconds": 3600,
+  "memoryUsageBytes": {
+    "heapUsed": 536870912,
+    "heapMax": 2147483648,
+    "nonHeapUsed": 134217728
+  },
+  "cpuLoad": {
+    "systemLoadAverage": 0.5,
+    "processCpuLoad": 0.2
+  },
+  "dependencies": {
+    "database": {
+      "status": "UP",
+      "responseTimeMs": 15
+    },
+    "cache": {
+      "status": "UP",
+      "responseTimeMs": 2
+    },
+    "messageQueue": {
+      "status": "DOWN",
+      "error": "Connection refused"
+    }
+  },
+  "customMetrics": {
+    "activeConnections": 120,
+    "requestsPerSecond": 50
+  }
+}
